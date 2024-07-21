@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NABOKOF | Сеть Barbershop Санкт-Петербург</title>
+    <title>НАБОКOF | Сеть Barbershop Санкт-Петербург</title>
     <meta name="description" content="Добро пожаловать в наш оазис безупречного мужского стиля! Только в нашем барбершопе ты сможешь получить настоящий кайф от ухода за собой. И знаешь почему? Три слова: сервис, атмосфера, цены. Давай-ка обсудим подробнее!">
     <meta name="keywords" content="Nabokof, Набоков, Барбершоп, Сеть Барбершопов, Санкт-Петербург, Спб, Мужские стрижки, Подричься, Детские стрижки, Лучшие барбершопы, Барбершоп цены, Barbershop">
 
@@ -44,28 +44,60 @@
         {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "Набокof Барбершоп",
+          "name": "НабокOf Барбершоп",
           "url": "https://nabokof.com/",
-          "logo": "https://nabokof.com/img/logo.webp", 
-          "image": "https://nabokof.com/img/header-bg.jpg", 
+          "logo": "https://nabokof.com/img/logo.webp",
+          "image": "https://nabokof.com/img/header-bg.jpg",
           "description": "Барбершоп с филиалами в Санкт-Петербурге и Кудрово, предлагающий услуги мужских и детских стрижек, моделирование бороды и другие процедуры.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Комендантский пр. 66 к 1",
-            "streetAddress": "Кудрово. Пражская 14",
-            "streetAddress": "Хошимина, 13к1",
-            "addressLocality": "Санкт-Петербург",
-            "addressRegion": "СПб",
-            "postalCode": "191025",
-            "addressCountry": "RU"
-          },
-          "telephone": "Комендантский пр. 66 к 1 + 7 812 927 99 93",
-          "telephone": "Кудрово. Пражская 14 + 7 812 928 99 93",
+          "address": [
+            {
+              "@type": "PostalAddress",
+              "streetAddress": "Комендантский пр. 66 к 1",
+              "addressLocality": "Санкт-Петербург",
+              "addressRegion": "СПб",
+              "postalCode": "191025",
+              "addressCountry": "RU"
+            },
+            {
+              "@type": "PostalAddress",
+              "streetAddress": "Пражская 14",
+              "addressLocality": "Кудрово",
+              "addressRegion": "СПб",
+              "postalCode": "193318",
+              "addressCountry": "RU"
+            },
+            {
+              "@type": "PostalAddress",
+              "streetAddress": "Хошимина, 13к1",
+              "addressLocality": "Санкт-Петербург",
+              "addressRegion": "СПб",
+              "postalCode": "190068",
+              "addressCountry": "RU"
+            }
+          ],
+          "telephone": [
+            "+7 812 927 99 93",
+          ],
           "priceRange": "$$",
           "openingHours": [
-            "Mo-Fr 10:00-20:00",
-            "Sa 10:00-18:00",
-            "Su 12:00-18:00"
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Monday-Friday",
+              "opens": "10:00",
+              "closes": "22:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "10:00",
+              "closes": "22:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Sunday",
+              "opens": "10:00",
+              "closes": "22:00"
+            }
           ],
           "sameAs": [
             "https://vk.com/nabok_of",
@@ -74,10 +106,263 @@
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5",
-            "reviewCount": "250"
-          }
-        }       
-    </script>
+            "reviewCount": "204"
+          },
+          "service": [
+            {
+              "@type": "Service",
+              "name": "Мужская стрижка",
+              "description": "Профессиональная стрижка мужских волос",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "590",
+                "priceCurrency": "RUB",
+                "duration": "PT30M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Комплекс стрижка и моделирование бороды",
+              "description": "Стрижка волос с моделированием бороды",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "1090",
+                "priceCurrency": "RUB",
+                "duration": "PT1H"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Коррекция воском (комплекс)",
+              "description": "Комплексная коррекция воском различных зон",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "300",
+                "priceCurrency": "RUB",
+                "duration": "PT10M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Коррекция воском (одна зона)",
+              "description": "Коррекция воском одной определенной зоны",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "500",
+                "priceCurrency": "RUB"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Воск (уши/нос/межбровье)",
+              "description": "Удаление волос в ушах, носу, межбровье воском",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "150",
+                "priceCurrency": "RUB"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Детская стрижка (от 5 до 10 лет)",
+              "description": "Профессиональная стрижка для детей от 5 до 10 лет",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "390",
+                "priceCurrency": "RUB",
+                "duration": "PT20M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Моделирование бороды",
+              "description": "Профессиональное моделирование и уход за бородой",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "500",
+                "priceCurrency": "RUB",
+                "duration": "PT30M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Стрижка машинкой (одна насадка)",
+              "description": "Стрижка волос машинкой с использованием одной насадки",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "300",
+                "priceCurrency": "RUB",
+                "duration": "PT15M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Стрижка бороды и усов",
+              "description": "Стрижка и моделирование бороды и усов",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "300",
+                "priceCurrency": "RUB",
+                "duration": "PT15M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Акция стрижка отца+сына",
+              "description": "Стрижка для отца и сына вместе в рамках акции",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "950",
+                "priceCurrency": "RUB",
+                "duration": "PT50M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Камуфляж седины головы",
+              "description": "Камуфляж седины волос на голове с использованием специальных средств",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "800",
+                "priceCurrency": "RUB",
+                "duration": "PT30M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Камуфляж седины бороды",
+              "description": "Камуфляж седины в бороде с использованием специальных средств",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "500",
+                "priceCurrency": "RUB",
+                "duration": "PT30M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Бритье головы/бороды",
+              "description": "Профессиональное бритье головы или бороды по желанию клиента",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "600",
+                "priceCurrency": "RUB",
+                "duration": "PT30M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Моделирование бороды + коррекция воском комплекс",
+              "description": "Моделирование бороды в сочетании с комплексной коррекцией воском различных зон лица",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "800",
+                "priceCurrency": "RUB",
+                "duration": "PT30M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Укладка с мытьем головы",
+              "description": "Профессиональная укладка волос с предварительным мытьем головы клиента",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "300",
+                "priceCurrency": "RUB",
+                "duration": "PT15M"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Hair-tattoo",
+              "description": "Уникальное оформление волос в виде татуировки на коже головы",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "110",
+                "priceCurrency": "RUB"
+              }
+            },
+            {
+              "@type": "Service",
+              "name": "Патчи",
+              "description": "Процедура с использованием патчей для кожи лица или головы",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Набокof Барбершоп"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "100",
+                "priceCurrency": "RUB"
+              }
+            }
+          ]
+        }
+    </script>  
 </head>
 <body>
     <div class="wrapper">
