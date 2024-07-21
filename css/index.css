@@ -264,7 +264,7 @@ body {
 }
 
 .header {
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/header-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -275,7 +275,7 @@ body {
 }
 @media (max-width: 650px) {
   .header {
-    background-image: url("../img/mobile-header-bg.png");
+    background-image: url("../img/mobile-header-bg.webp");
     padding-top: 0;
   }
   .header .container {
